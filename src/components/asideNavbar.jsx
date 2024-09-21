@@ -111,7 +111,7 @@ export default function AsideNavbar({ className = "" }) {
     const [subNavActive, setSubNavActive] = useState({isVisible : false, index : 0})
   return (
     <div
-      className={`w-[80%] max-w-[360px] transition-transform duration-200 lg:hidden fixed top-0 left-0 mt-[74px] shadow ${className} cursor-pointer pr-3 pb-3`}
+      className={`w-[80%] max-w-[360px] transition-transform duration-200 lg:hidden fixed top-0 left-0 mt-[74px] shadow ${className} cursor-pointer pr-3 pb-3 bg-white`}
     >
       <ul className="w-full text-xl mt-3">
         {navData.map((li, index) =>

@@ -8,11 +8,11 @@ export default {
     extend: {
       colors: {
         primary: "#2f2e0c",
-        secondary: "#aeff6e",
+        secondary: "#39b75d",
       },
       textColor: {
         primary: "#2f2e0c",
-        secondary: "#aeff6e",
+        secondary: "#39b75d",
       }
     },
   },
