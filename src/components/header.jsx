@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header className="border-b">
       <AsideNavbar className={`${!mobileNavActive ? 'translate-x-0' : '-translate-x-full'}`} />
-      <Container className="overflow-hidden">
+      <Container >
         <nav className="flex justify-between items-center py-4">
           <ul className="flex gap-2 items-center">
             <motion.li initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.3}} onClick={()=>setMobileNavActive(pre=>!pre)}>
@@ -33,7 +33,7 @@ export default function Header() {
             </motion.li>
           </ul>
 
-          <ul className="hidden lg:text-sm xl:text-lg lg:flex gap-4 justify-center items-center relative z-50 overflow-hidden">
+          <ul className="hidden lg:text-sm xl:text-lg lg:flex gap-4 justify-center items-center relative z-50">
             <motion.li initial={{opacity:0, y:-100}} animate={{opacity:1, y:0, ease:'easeInOut'}} transition={{duration:0.3, delay:delay}}>
               <a href="">Catalog</a>
             </motion.li>
